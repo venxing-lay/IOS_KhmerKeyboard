@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="CustomKeyboardExtension" customModuleProvider="target">
+            <connections>
+                <outlet property="stackView1" destination="u9P-pH-bqd" id="6Qh-J2-ZlD"/>
+                <outlet property="stackView2" destination="d8J-DZ-k4F" id="6f0-Vs-iCW"/>
+                <outlet property="stackView3" destination="eVR-Py-GjU" id="0uM-cV-Zgx"/>
+                <outlet property="stackView4" destination="cSw-Hy-18Z" id="W9m-Rd-tzw"/>
+                <outlet property="stackView5" destination="x99-Y2-Ksn" id="JFu-52-AZK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="275"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jKd-4p-jOJ">
+                    <rect key="frame" x="3" y="0.0" width="314" height="275"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9P-pH-bqd">
+                            <rect key="frame" x="0.0" y="0.0" width="314" height="55"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8J-DZ-k4F">
+                            <rect key="frame" x="0.0" y="55" width="314" height="55"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVR-Py-GjU">
+                            <rect key="frame" x="0.0" y="110" width="314" height="55"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSw-Hy-18Z">
+                            <rect key="frame" x="0.0" y="165" width="314" height="55"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x99-Y2-Ksn">
+                            <rect key="frame" x="0.0" y="220" width="314" height="55"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="314" id="4Z2-mR-5pt"/>
+                        <constraint firstAttribute="height" constant="275" id="sPB-Ez-CPO"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="314" id="zUA-HK-vWi"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.81923294067382812" green="0.82708883285522461" blue="0.85191726684570312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jKd-4p-jOJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="3" id="XpM-7f-6mr"/>
+                <constraint firstItem="jKd-4p-jOJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="c7d-mV-ZlN"/>
+                <constraint firstItem="jKd-4p-jOJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="3" id="gMj-pM-xkv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jKd-4p-jOJ" secondAttribute="trailing" constant="3" id="iNF-zM-e9L"/>
+                <constraint firstItem="jKd-4p-jOJ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="q18-zA-Tty"/>
+                <constraint firstItem="jKd-4p-jOJ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="ytG-9u-rsL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-243.47826086956525" y="51.5625"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
